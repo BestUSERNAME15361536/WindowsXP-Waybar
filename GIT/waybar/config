@@ -5,7 +5,7 @@
     "margin-bottom": 0,
 
     "modules-left": ["hyprland/window"],
-    "modules-center": ["cpu", "memory", "network", "bluetooth", "custom/apps"], // Fixed here
+    "modules-center": ["cpu", "memory", "network", "bluetooth", "custom/apps"],
     "modules-right": ["clock"],
 
     "hyprland/window": {
@@ -36,14 +36,14 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}"
+        "format": "{:%I:%M %p}",
         "tooltip-format": "{:%Y-%m-%d}",
         "on-click": "gsimplecal"
     },
 
-    "custom/apps": { 
+    "custom/apps": {
         "format": "APPS",
-        "on-click": "GIT/APPS/apps-launcher.sh",
+        "on-click": "~/Desktop/APPS/apps-launcher.sh",
         "tooltip": false
     }
 }
