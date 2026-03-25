@@ -43,7 +43,7 @@
 
     "custom/apps": {
         "format": "APPS",
-        "on-click": "~/Desktop/APPS/apps-launcher.sh",
+        "on-click": "/GIT/APPS/apps-launcher.sh",
         "tooltip": false
     }
 }
