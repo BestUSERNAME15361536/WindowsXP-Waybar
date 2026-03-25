@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 45,
+    "margin-bottom": 0,
+
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["cpu", "memory", "network", "bluetooth", "custom/apps"], // Fixed here
+    "modules-right": ["clock"],
+
+    "hyprland/window": {
+        "format": "  {title}",
+        "separate-outputs": true,
+        "max-length": 50
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": " {}%"
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "⚠",
+        "on-click": "kitty --class popup nmtui"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "on-click": "blueman-manager"
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}"
+        "tooltip-format": "{:%Y-%m-%d}",
+        "on-click": "gsimplecal"
+    },
+
+    "custom/apps": { 
+        "format": "APPS",
+        "on-click": "GIT/APPS/apps-launcher.sh",
+        "tooltip": false
+    }
+}

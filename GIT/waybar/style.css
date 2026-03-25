@@ -1,0 +1,69 @@
+
+    border: none;
+    border-radius: 0;
+    font-family: "Tahoma", "JetBrainsMono Nerd Font", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+
+window#waybar {
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+    border-top: 2px solid #003399;
+    color: #ffffff;
+}
+
+
+#window,
+.tray-child,
+#cpu,
+#memory,
+#network,
+#bluetooth,
+#custom-apps {
+    padding: 0 15px;
+    margin: 5px 2px;
+    background: linear-gradient(to bottom, #5ba4e5 0%, #2062d3 50%, #1a5ad0 51%, #3a91e8 100%);
+    border: 1px solid #1a468d;
+    border-radius: 4px;
+    color: white;
+}
+
+
+#window {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px inset rgba(255, 255, 255, 0.2);
+    margin-left: 10px;
+}
+
+
+#tray-mechanics {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#clock {
+    background: linear-gradient(to bottom, #0ea6ea 0%, #0d96d9 100%);
+    color: white;
+    padding-left: 80px;
+    padding-right: 20px;
+    border-left: 3px solid #10b5fb;
+    margin-left: 40px;
+    border-radius: 0;
+}
+
+#network:hover, #bluetooth:hover, #clock:hover, #custom-apps:hover {
+    background: linear-gradient(to bottom, #6db3f2 0%, #3679e6 50%, #2b6de1 51%, #4ea5f0 100%);
+}
+
+#network:active, #bluetooth:active, #custom-apps:active {
+    background: linear-gradient(to bottom, #1a5ad0 0%, #2062d3 50%, #5ba4e5 100%);
+    border: 1px inset #1a468d;
+}
+
+/* Status: Warning */
+#network.disconnected {
+    background: #df3b00;
+}
